@@ -1,0 +1,18 @@
+--cpu Cortex-M0
+".\objects\system_hk32f030xmxxa.o"
+".\objects\keil_startup_hk32f030xmxxa.o"
+".\objects\hk32f030xmxxa_it.o"
+".\objects\main.o"
+".\objects\hk32f030xmxxa_dbgmcu.o"
+".\objects\hk32f030xmxxa_exti.o"
+".\objects\hk32f030xmxxa_flash.o"
+".\objects\hk32f030xmxxa_gpio.o"
+".\objects\hk32f030xmxxa_misc.o"
+".\objects\hk32f030xmxxa_pwr.o"
+".\objects\hk32f030xmxxa_rcc.o"
+".\objects\hk32f030xmxxa_syscfg.o"
+".\objects\hk32f030xmxxa_usart.o"
+--library_type=microlib --strict --scatter ".\Objects\Project.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Project.map" -o .\Objects\Project.axf
